@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>Gym Workout Helper</h1>
+      <h1 className="text-6xl font-black">Gym Workout Helper</h1>
     </>
   );
 }
