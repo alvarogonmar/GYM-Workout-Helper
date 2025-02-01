@@ -1,3 +1,7 @@
 export default function ExercisePage() {
-  return <div>ExercisePage</div>;
+  return (
+    <>
+      <h1>My Exercises</h1>
+    </>
+  );
 }
