@@ -122,6 +122,13 @@ export default function Header() {
             </ul>
           </nav>
         </div>
+        {isHome && (
+          <form action="">
+            <div>
+              <label htmlFor="muscle">Muscle</label>
+            </div>
+          </form>
+        )}
       </div>
     </header>
   );
