@@ -123,9 +123,17 @@ export default function Header() {
           </nav>
         </div>
         {isHome && (
-          <form action="">
+          <form
+            className="md:w-1/2 2xl:w-1/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
+            action=""
+          >
             <div>
-              <label htmlFor="muscle">Muscle</label>
+              <label
+                htmlFor="muscle"
+                className="block text-white uppercase font-extrabold text-lg"
+              >
+                Muscle
+              </label>
             </div>
           </form>
         )}
