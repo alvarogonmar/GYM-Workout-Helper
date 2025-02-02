@@ -1,20 +1,11 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../css/Header.css";
-import { useMemo } from "react";
 
 export default function Header() {
-  const { pathname } = useLocation();
-  const isHome = useMemo(() => pathname === "/", [pathname]);
   return (
     <header className="bg-gray-700">
       <div className="mx-auto container px-5 py-16">
-        <div className="flex justify-between items-center">
-          {/* Imagen del logo en la izquierda */}
-          <div>
-            <img className="w-25" src="/arm.png" alt="logo" />
-          </div>
-
-          {/* Navegación */}
+        <div className="flex justify-center items-center">
           <nav>
             <ul className="flex gap-6">
               <label className="nav-item">
@@ -28,8 +19,8 @@ export default function Header() {
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      height="32"
-                      width="32"
+                      height="40"
+                      width="40"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                     >
@@ -55,8 +46,8 @@ export default function Header() {
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      height="32"
-                      width="32"
+                      height="40"
+                      width="40"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                     >
@@ -81,8 +72,8 @@ export default function Header() {
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      height="32"
-                      width="32"
+                      height="40"
+                      width="40"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                     >
@@ -108,8 +99,8 @@ export default function Header() {
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
-                      height="32"
-                      width="32"
+                      height="40"
+                      width="40"
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                     >
