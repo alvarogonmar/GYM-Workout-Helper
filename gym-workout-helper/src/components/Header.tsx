@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useMemo } from "react";
 import NavigationMenu from "./navigationMenu";
+import "../css/Header.css";
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -14,11 +15,15 @@ export default function Header() {
       }`}
     >
       <NavigationMenu />
-      <div className="flex  justify-center">
-        {isHome}
+      <div className="flex justify-center">
+        {isHome && (
+          <h1 className="anton-sc-regular text-8xl text-white border-4 border-green-500 p-2 rounded-lg py-5">
+            Gym Workout Helper
+          </h1>
+        )}
         {isSearch && (
           <form
-            className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
+            className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-20 p-10 py-10 rounded-lg shadow space-y-8"
             action=""
           >
             <div>

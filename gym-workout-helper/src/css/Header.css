@@ -57,8 +57,6 @@
   color: blue;
 }
 
-/* @theme {
-  background-image: {
-    "header" : "url('/bg.jpg')"
-  }
-} */
+.anton-sc-regular {
+  font-family: "Anton SC", serif;
+}
