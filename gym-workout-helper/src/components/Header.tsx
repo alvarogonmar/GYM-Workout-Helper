@@ -134,6 +134,13 @@ export default function Header() {
               >
                 Muscle
               </label>
+              <select
+                id="muscle"
+                name="muscle"
+                className="p-3 w-full rounded-lg focus:outline-none bg-amber-50"
+              >
+                <option value="">-- Select --</option>
+              </select>
             </div>
           </form>
         )}
