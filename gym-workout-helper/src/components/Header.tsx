@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header
       className={
-        isSearch ? "bg-[url('/bg-2.jpg')] bg-center bg-cover" : "bg-gray-700"
+        isSearch ? "bg-[url('/bg-3.jpg')] bg-center bg-cover" : "bg-gray-700"
       }
     >
       <div className="mx-auto container px-5 py-16">
