@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="bg-gray-700">
       <div className="mx-auto container px-5 py-16">
-        <div className="flex justify-center items-center">
+        <div className="flex  justify-center">
           <nav>
             <ul className="flex gap-6">
               <label className="nav-item">
@@ -122,28 +122,30 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-        {isHome && (
-          <form
-            className="md:w-1/2 2xl:w-1/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
-            action=""
-          >
-            <div>
-              <label
-                htmlFor="muscle"
-                className="block text-white uppercase font-extrabold text-lg"
-              >
-                Muscle
-              </label>
-              <select
-                id="muscle"
-                name="muscle"
-                className="p-3 w-full rounded-lg focus:outline-none bg-amber-50"
-              >
-                <option value="">-- Select --</option>
-              </select>
-            </div>
-          </form>
-        )}
+        <div className="flex  justify-center">
+          {isHome && (
+            <form
+              className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
+              action=""
+            >
+              <div>
+                <label
+                  htmlFor="muscle"
+                  className="block text-white uppercase font-extrabold text-lg"
+                >
+                  Muscle
+                </label>
+                <select
+                  id="muscle"
+                  name="muscle"
+                  className="p-3 w-full rounded-lg focus:outline-none bg-amber-50"
+                >
+                  <option value="">-- Select --</option>
+                </select>
+              </div>
+            </form>
+          )}
+        </div>
       </div>
     </header>
   );
