@@ -57,3 +57,8 @@
   color: blue;
 }
 
+/* @theme {
+  background-image: {
+    "header" : "url('/bg.jpg')"
+  }
+} */
