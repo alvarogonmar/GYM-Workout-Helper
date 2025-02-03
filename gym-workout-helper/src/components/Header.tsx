@@ -9,9 +9,9 @@ export default function Header() {
   const isSearch = useMemo(() => pathname === "/search", [pathname]);
   return (
     <header
-      className={
-        isSearch ? "bg-[url('/bg-3.jpg')] bg-center bg-cover" : "bg-gray-700"
-      }
+      className={`bg-center bg-cover ${
+        isSearch || isHome ? "bg-[url('/bg-3.jpg')]" : "bg-gray-700"
+      }`}
     >
       <div className="mx-auto container px-5 py-16">
         <div className="flex  justify-center">
@@ -128,6 +128,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex  justify-center">
+          {isHome}
           {isSearch && (
             <form
               className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
