@@ -17,7 +17,7 @@ export default function Header() {
       <NavigationMenu />
       <div className="flex justify-center">
         {isHome && (
-          <h1 className="anton-sc-regular text-8xl text-white border-4 border-green-500 p-2 rounded-lg py-5">
+          <h1 className="anton-sc-regular text-8xl text-gray-200 border-4 border-green-500 p-2 rounded-lg py-5">
             Gym Workout Helper
           </h1>
         )}
