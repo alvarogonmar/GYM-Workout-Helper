@@ -6,22 +6,23 @@ export default function Header() {
   const { pathname } = useLocation();
 
   const isHome = useMemo(() => pathname === "/", [pathname]);
+  const isSearch = useMemo(() => pathname === "/search", [pathname]);
   return (
     <header
       className={
-        isHome ? "bg-[url('/bg.jpg')] bg-center bg-cover" : "bg-gray-700"
+        isSearch ? "bg-[url('/bg-2.jpg')] bg-center bg-cover" : "bg-gray-700"
       }
     >
       <div className="mx-auto container px-5 py-16">
         <div className="flex  justify-center">
-          <nav>
+          <nav id="navbody">
             <ul className="flex gap-6">
               <label className="nav-item">
                 <li>
                   <NavLink
                     to="/"
                     className={({ isActive }) =>
-                      isActive ? "text-blue-400" : "text-white"
+                      isActive ? "text-green-500" : "text-gray-500"
                     }
                   >
                     <svg
@@ -48,7 +49,7 @@ export default function Header() {
                   <NavLink
                     to="/search"
                     className={({ isActive }) =>
-                      isActive ? "text-blue-400" : "text-white"
+                      isActive ? "text-green-500" : "text-gray-500"
                     }
                   >
                     <svg
@@ -74,7 +75,7 @@ export default function Header() {
                   <NavLink
                     to="/myexercises"
                     className={({ isActive }) =>
-                      isActive ? "text-blue-400" : "text-white"
+                      isActive ? "text-green-500" : "text-gray-500"
                     }
                   >
                     <svg
@@ -101,7 +102,7 @@ export default function Header() {
                   <NavLink
                     to="/user"
                     className={({ isActive }) =>
-                      isActive ? "text-blue-400" : "text-white"
+                      isActive ? "text-green-500" : "text-gray-500"
                     }
                   >
                     <svg
@@ -127,7 +128,7 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex  justify-center">
-          {isHome && (
+          {isSearch && (
             <form
               className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-32 p-10 rounded-lg shadow space-y-6"
               action=""
@@ -149,7 +150,7 @@ export default function Header() {
               </div>
               <input
                 type="submit"
-                value={"Search Muscle"}
+                value={"Search Exercises"}
                 className="cursor-pointer bg-gray-700 hover:bg-gray-900
               text-white font-extrabold w-full p-2 rounded-lg uppercase"
               />
