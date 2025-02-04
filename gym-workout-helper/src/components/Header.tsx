@@ -23,7 +23,7 @@ export default function Header() {
         )}
         {isSearch && (
           <form
-            className="w-full md:w-1/2 2xl:w-2/3 bg-gray-600 my-20 p-10 py-10 rounded-lg shadow space-y-8"
+            className="w-full md:w-1/2 2xl:w-2/3 bg-gray-500 my-20 p-10 py-10 rounded-lg shadow space-y-8"
             action=""
           >
             <div>
